@@ -1,6 +1,6 @@
 # Password Manager
 
-Password Manager is an application for managing passwords, written in Java using Swing for the user interface and SQLite as the database.
+Password Manager is an application for managing passwords, written in Java using Swing for the user interface and SQLite as the database. The application provides a secure way to store and manage your passwords by encrypting sensitive data using the AES (Advanced Encryption Standard) algorithm.
 
 ## Features
 
