@@ -11,16 +11,28 @@ Password Manager is an application for managing passwords, written in Java using
 - Supporting multiple users with relationships between tables
 - Registering new users
 - Encrypting and decrypting data
+- User login and authentication
+- Viewing and sorting stored passwords
+- Menu navigation
 
 ## Project Structure
 
 - `AddPasswordFrame.java`: Class responsible for the user interface for adding new passwords.
-- `PasswordDataManager.java`: Class responsible for managing password data in the database.
-- `DataManager.java`: Base class for `PasswordDataManager` and `UsersDataManager`, containing methods for opening and closing database connections.
-- `RegistrationFrame.java`: Class responsible for the user interface for registering new users.
-- `UsersDataManager.java`: Class responsible for managing user data in the database.
-- `PasswordHashing.java`: Class responsible for hashing user passwords.
+- `App.java`: Main application class.
 - `CipherMachine.java`: Class responsible for encrypting and decrypting data using the AES algorithm.
+- `DataManager.java`: Base class for `PasswordDataManager` and `UsersDataManager`, containing methods for opening and closing database connections.
+- `LoginPageFrame.java`: Class responsible for the user interface for user login.
+- `Main.java`: Entry point of the application.
+- `MenuFrame.java`: Class responsible for the main menu interface.
+- `PasswordDataManager.java`: Class responsible for managing password data in the database.
+- `PasswordDataRow.java`: Class representing a row of password data.
+- `PasswordHashing.java`: Class responsible for hashing user passwords.
+- `PasswordsTableFrame.java`: Class responsible for displaying stored passwords in a table format.
+- `RegistrationFrame.java`: Class responsible for the user interface for registering new users.
+- `SortPasswordFrame.java`: Class responsible for the user interface for sorting passwords.
+- `testClass.java`: Class for testing purposes.
+- `UserDataRow.java`: Class representing a row of user data.
+- `UsersDataManager.java`: Class responsible for managing user data in the database.
 
 ## Requirements
 
@@ -84,7 +96,3 @@ public class Main {
 
 - Artur Penar
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
