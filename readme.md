@@ -64,35 +64,19 @@ Password Manager is an application for managing passwords, written in Java using
 ## Usage
 
 1. Run the application.
+
 2. Register a new user by entering a login and password, then clicking the "Register" button.
+![alt text](/images/register.png)
+
 3. After registration, log in and add new passwords by entering application data, login, password, email, and URL.
+![alt text](/images/add-password.png)
+
 4. You can also generate a random password by clicking the "Generate" button.
+
 5. Encrypt and decrypt data using the `CipherMachine` class.
 
-## Example Usage of `CipherMachine` Class
+6. Search passwords in stored data.
 
-```java
-public class Main {
-    public static void main(String[] args) throws Exception {
-        CipherMachine cipherMachine = new CipherMachine();
-        
-        String originalData = "SensitiveData";
-        String encryptedData = cipherMachine.encrypt(originalData);
-        String key = cipherMachine.getKey();
-        String iv = cipherMachine.getIv();
-        
-        System.out.println("Original Data: " + originalData);
-        System.out.println("Encrypted Data: " + encryptedData);
-        System.out.println("Key: " + key);
-        System.out.println("IV: " + iv);
-        
-        String decryptedData = cipherMachine.decrypt(encryptedData, key, iv);
-        System.out.println("Decrypted Data: " + decryptedData);
-    }
-}
-```
+    ![alt text](/images/show-passwords.png)
 
-## Author
-
-- Artur Penar
 
